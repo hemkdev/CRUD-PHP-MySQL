@@ -13,13 +13,16 @@
         align-items: center;
          }
         button {
-        padding: 10px 20px;
-        width: 100px;
-        height: 100px;
-        font-size: 16px;
-        text-align: center;
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
-        border-radius: 5px;
-        border: 1px solid #ccc;
+        border: none;
+        font-family: inherit;
+        font-size: 1rem;
+        width: 150px;
         }
  }
