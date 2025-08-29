@@ -13,7 +13,7 @@ class Database
     {
         $this->driver = "mysql";
         $this->host = "localhost";
-        $this->dbname = "crud_php";
+        $this->dbname = "test_crud";
         $this->username = "root";
         $this->password = "";
     }
@@ -31,7 +31,7 @@ class Database
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
             return $this->conn;
         } 
-        
+
         catch (Exception $e) 
         {
             echo $e->getMessage();
