@@ -7,6 +7,7 @@ $dbname = "saep_db";
 
 $conn = new mysqli($servidor, $usuario, $senha, $dbname);
 
-if (!$conn) {
-    
+    // Verificar conexão
+    if ($conn->connect_error) {
+        die("Falha na conexão: " . $conn->connect_error);
 }
