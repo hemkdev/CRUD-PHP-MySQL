@@ -1,1 +1,1 @@
-# CRUD-PHP-MySQL
+Criação de um sistema simples de gerenciamento de login, contendo as funções de adicionar, editar, listar e excluir. Utilizando uma CRUD de PHP com Mysql a partir do XAMPP
