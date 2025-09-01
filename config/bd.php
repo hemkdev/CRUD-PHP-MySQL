@@ -3,7 +3,7 @@
     $servidor = "localhost";
     $usuario = "root";
     $senha = "";
-    $dbname = "saep_db";
+    $dbname = "crud_db";
 
     $conn = new mysqli($servidor, $usuario, $senha, $dbname);
 
