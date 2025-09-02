@@ -27,10 +27,4 @@
     if(isset($_POST['listar'])){
         header("Location: ../model/list.php");
     }
-    if(isset($_POST['editar'])){
-        header("Location: ../model/edit.php");
-    }
-    if(isset($_POST['deletar'])){
-        header("Location: ../model/delete.php");
-    }
 ?>

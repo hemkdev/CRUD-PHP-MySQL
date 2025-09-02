@@ -8,4 +8,4 @@ $id = $_GET['id'];
 // Delete row from the database table
 $result = mysqli_query($conn, "DELETE FROM usuario WHERE ID_usuario = $id");
 
-header("Location:../list.php");
+header("Location: list.php");
