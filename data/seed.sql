@@ -1,5 +1,9 @@
-CREATE TABLE 'usuario' (
-    'id' INT AUTO_INCREMENT PRIMARY KEY,
-    'nome_usuario' VARCHAR(45) NOT NULL UNIQUE,
-    'senha_usuario' VARCHAR(45) NOT NULL
+CREATE DATABASE crud;
+
+USE crud;
+
+CREATE TABLE usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_usuario VARCHAR(45) NOT NULL UNIQUE,
+    senha_usuario VARCHAR(45) NOT NULL
 ) 
