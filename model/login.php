@@ -6,11 +6,11 @@
     
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (isset($_POST["login"])) { //verifica se o botão foi clicado
-            $email = trim($_POST["nome"] ?? ""); //evita espaços vazios
+            $nome = trim($_POST["nome"] ?? ""); //evita espaços vazios
             $senha = trim($_POST["senha"] ?? "");
 
            $stmt = $conn->prepare("SELECT * FROM usuario WHERE nome_usuario = ? AND senha_usuario = ? ");
-           $stmt -> bind_param("ss", $email, $senha);
+           $stmt -> bind_param("ss", $nome, $senha);
            $stmt -> execute();
            $resultado = $stmt->get_result();
 
