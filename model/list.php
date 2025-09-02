@@ -29,7 +29,9 @@ $result = $conn->query($sql); // Executa a consulta
                 echo '<tr>';
                 echo '<td>' . $row['ID_usuario'] . '</td>'; // Exibe o ID
                 echo '<td>' . $row['nome_usuario'] . '</td>'; // Exibe o Nome
-                echo '</tr>'; // Fecha a linha da tabela   
+                echo '<td><a href="edit.php?id=' . $row['ID_usuario'] . '"> Editar </a></td>'; // Link para editar
+                echo '<td><a href="delete.php?id=' . $row['ID_usuario'] . '" onClick="return confirm(\'Tem certeza que deseja deletar?\')"> Deletar </a></td>'; // Link para excluir
+                echo '</tr>'; // Fecha a linha da tabela
             }
         } else {
             echo '<tr><td colspan="3">Nenhum resultado encontrado</td></tr>'; // Mensagem se não houver resultados
