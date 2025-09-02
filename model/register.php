@@ -23,7 +23,7 @@
                 $stmt->bind_param("ss", $nome, $senha);
                 
                 if ($stmt->execute()) {
-                    $mensagem = "Registro bem-sucedido! Você pode fazer login agora.";
+                    $mensagem = "Registro bem-sucedido! Você pode voltar para a página inicial e fazer login agora.";
                 } else {
                     $erro = "Erro ao registrar. Tente novamente.";
                 }
@@ -53,10 +53,10 @@
         <button type="submit" name="cadastrar">Registrar</button>
         <?php
             if($erro) {
-                echo "<div> $erro </div>";
+                echo "<div class='erro'> $erro </div>";
             }
             if(isset($mensagem)) {
-                echo "<div> $mensagem </div>";
+                echo "<div class='sucesso'> $mensagem </div>";
             }
             ?>
     </form>

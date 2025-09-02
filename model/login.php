@@ -9,11 +9,13 @@
             $nome = trim($_POST["nome"] ?? ""); //evita espaços vazios
             $senha = trim($_POST["senha"] ?? "");
 
+            // Verifica se o nome de usuário e senha estão corretos
            $stmt = $conn->prepare("SELECT * FROM usuario WHERE nome_usuario = ? AND senha_usuario = ? ");
            $stmt -> bind_param("ss", $nome, $senha);
            $stmt -> execute();
            $resultado = $stmt->get_result();
-
+        
+           // Verifica se encontrou um usuário com as credenciais fornecidas
            if  ($resultado->num_rows === 1) {
                 $dados = $resultado->fetch_assoc();
 
@@ -50,7 +52,7 @@
         <button type="submit" name="login">Entrar</button>
         <?php
             if($erro) {
-                echo "<div> $erro </div>";
+                echo "<div class='erro'>  $erro </div>";
             }
         ?>
     </form>

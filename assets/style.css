@@ -33,5 +33,12 @@
          left: 20px;
          cursor: pointer;
      }
-     
+
+     .erro {
+        color: rgb(170, 9, 9);
+     }
+
+     .sucesso {
+        color: green;
+     }
  }
