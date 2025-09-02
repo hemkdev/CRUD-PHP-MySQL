@@ -50,7 +50,7 @@
         <label> Senha: </label>
         <input type="password" name="senha" required> <br>
 
-        <button type="submit" name="login">Registrar</button>
+        <button type="submit" name="cadastrar">Registrar</button>
         <?php
             if($erro) {
                 echo "<div> $erro </div>";
