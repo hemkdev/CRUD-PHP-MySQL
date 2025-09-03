@@ -12,8 +12,6 @@
         <button type="submit" name="login">Login</button>
         <button type="submit" name="cadastrar">Cadastrar</button>
         <button type="submit" name="listar">Listar</button>
-        <button type="submit" name="editar">Editar</button>
-        <button type="submit" name="deletar">Deletar</button>
     </form>
 </body>
 </html>

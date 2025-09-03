@@ -9,6 +9,8 @@ $resultData = mysqli_fetch_assoc($result);
 
 $nome = $resultData['nome_usuario'];
 $senha = $resultData['senha_usuario'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,8 +32,8 @@ $senha = $resultData['senha_usuario'];
 
         <?php 
             echo '<tr>';
-                echo '<td>' . $nome . '</td>'; // Exibe o ID
-                echo '<td>' . $senha . '</td>'; // Exibe o Nome Link para excluir
+                echo '<td>' . $nome . '</td>';
+                echo '<td>' . $senha . '</td>';
                 echo '</tr>';
         ?>                       
     </table>
