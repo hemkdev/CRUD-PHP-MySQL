@@ -22,10 +22,19 @@ $senha = $resultData['senha_usuario'];
     <img class="home" src="../assets/home.png" alt="home" width="30px" height="30px" href="../public/index.php" onclick="window.location.href='../public/index.php'"> 
      
     <h1 class="title" > Edit </h1>
-    <?php
-    echo "$nome";
-    echo "$senha";
-    ?>
+     <table>
+        <tr>
+            <th>Nome</th>
+            <th>Senha</th>
+        </tr>
+
+        <?php 
+            echo '<tr>';
+                echo '<td>' . $nome . '</td>'; // Exibe o ID
+                echo '<td>' . $senha . '</td>'; // Exibe o Nome Link para excluir
+                echo '</tr>';
+        ?>                       
+    </table>
     
 </body>
 </html>
