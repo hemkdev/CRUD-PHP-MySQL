@@ -24,7 +24,8 @@ $senha = $resultData['senha_usuario'];
     <img class="home" src="../assets/home.png" alt="home" width="30px" height="30px" href="../public/index.php" onclick="window.location.href='../public/index.php'"> 
      
     <h1 class="title" > Edit </h1>
-     <table>
+     
+    <table>
         <tr>
             <th>Nome</th>
             <th>Senha</th>
@@ -37,6 +38,23 @@ $senha = $resultData['senha_usuario'];
                 echo '</tr>';
         ?>                       
     </table>
+
+    <form name="edit" method="post" action="editAction.php">
+		<table>
+			<tr> 
+				<td>Nome</td>
+				<td><input type="text" name="nome" value="<?php echo $nome; ?>"></td>
+			</tr>
+			<tr> 
+				<td>senha</td>
+				<td><input type="text" name="senha" value="<?php echo $senha; ?>"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="id" value=<?php echo $id; ?>></td>
+				<td><input type="submit" name="editar" value="editar"></td>
+			</tr>
+		</table>
+	</form>
     
 </body>
 </html>
